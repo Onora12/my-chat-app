@@ -12,12 +12,20 @@
             <h1>💬 Общий чат</h1>
             <button id="clearBtn" title="Очистить историю">🗑️</button>
         </div>
-        <div id="messages"></div>
+        <div id="messages">
+            <div class="message other-message">
+                👋 Добро пожаловать в чат! Начните общение.
+                <span class="time">00:00</span>
+            </div>
+        </div>
         <div class="input-area">
             <input type="text" id="messageInput" placeholder="Введите сообщение..." autofocus>
             <button id="sendBtn">➤</button>
         </div>
     </div>
+    <!-- Используем CDN-версию библиотеки -->
+    <script src="https://cdn.jsdelivr.net/npm/itty-sockets@1.0.1/dist/index.global.js"></script>
+    <!-- Наш основной скрипт -->
     <script src="script.js"></script>
 </body>
 </html>
